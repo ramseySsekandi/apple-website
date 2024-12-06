@@ -10,8 +10,13 @@ import {
   } from "../utils";
   
   export const navLists: string[] = ["Store", "Mac", "iPhone", "Support"];
-  
-  export const hightlightsSlides = [
+  export type slidesTypes = {
+    id: number,
+    textLists: string[],
+    video: string,
+    videoDuration: number
+  }
+  export const hightlightsSlides: slidesTypes[] = [
     {
       id: 1,
       textLists: [
