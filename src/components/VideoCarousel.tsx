@@ -83,7 +83,7 @@ const VideoCarousel = () => {
              }    
             })
             if(videoId) {
-                
+               console.log('hi') 
             }
         }
     },[videoId, startPlay]);
