@@ -82,7 +82,9 @@ const VideoCarousel = () => {
 
              }    
             })
-            if(videoId)
+            if(videoId) {
+                
+            }
         }
     },[videoId, startPlay]);
 
