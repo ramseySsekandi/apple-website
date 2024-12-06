@@ -54,7 +54,7 @@ const VideoCarousel = () => {
        } 
     }, [startPlay, videoId, isPlaying, loadedData]);
 
-    const handleLoadedMetadata = (i: any, e: any) => setLoadedData((pre) => [...pre, e] as any)
+    const handleLoadedMetadata = (e: any) => setLoadedData((pre) => [...pre, e] as any)
 
     useEffect(() => {
         let currentProgress = 0;
@@ -154,7 +154,7 @@ const VideoCarousel = () => {
                     }))
                    }}
                    onLoadedMetadata={
-                    (e) => handleLoadedMetadata(i, e)
+                    (e) => handleLoadedMetadata(e)
                    }
                    onEnded={() => (
                     i !== 3 ? handleProcess('video-end', i) : handleProcess('video-last')
